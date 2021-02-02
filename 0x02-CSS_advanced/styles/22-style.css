@@ -201,6 +201,14 @@ ul.row {
     background-color: var(--color-black);
 }
 
+.social-link {
+    display: block;
+}
+
+.social-link>svg {
+    fill: var(--text-color);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 html {
