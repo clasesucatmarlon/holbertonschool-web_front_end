@@ -56,7 +56,12 @@ body {
     line-height: var(--line-height-base);
 }
 
-a:link {
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+a[href] {
     color: var(--text-color);
     text-decoration: none;
 }
@@ -73,21 +78,8 @@ a:active {
     background-color: var(--color-light-grey);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
-}
-
-.visually-hidden {
-    display: none;
-}
-
 .card-category {
     color: var(--color-primary);
-}
-
-.section-header {
-    text-align: var(--section-header-align);
 }
 
 .section {
@@ -104,8 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-footer {
-    text-align: var(--section-footer-align);
     padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
 }
 
 .section-title {
@@ -113,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--font-size-xx-large);
     font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
-    color: var(--section-title-color)
+    color: var(--section-title-color);
 }
 
 .section-tagline {
@@ -144,11 +136,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
 }
 
 .nav .nav-link {
