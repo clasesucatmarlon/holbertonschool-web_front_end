@@ -1,6 +1,3 @@
-/*  Fix issues for dark theme
-*/
-
 *, *:before, *:after {
     box-sizing: border-box;
 }
