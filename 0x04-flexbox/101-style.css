@@ -1,0 +1,61 @@
+:root {
+    --colorBox1: #61ce6d;
+    --colorBox2: #2993ea;
+    --colorBox3: #344a61;
+    --colorBox4: #9f57bb;
+    --colorBox5: #e58027;
+    --colorFont: white;
+    --sizeFontGral: 5rem;
+    --widthGral: 18rem;
+    --heightGral: 9rem;
+    --marginBottom: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1, .box5 {
+    background: var(--colorBox1);
+    width: calc(var(--widthGral) / 3);
+    margin-top: calc(var(--marginBottom) * 4);
+    margin-bottom: calc(var(--marginBottom) * 1.5 );
+    font-size: calc(var(--sizeFontGral) / 3);
+    font-weight: 500;
+    color: var(--colorFont);
+}
+
+.box2, .box4 {
+    background: var(--colorBox2);
+    width: calc(var(--widthGral) / 2);
+    margin-top: calc(var(--marginBottom) * 2);
+    margin-bottom: var(--marginBottom);
+    font-size: calc(var(--sizeFontGral) / 2);
+    font-weight: 700;
+    color: var(--colorFont);
+}
+
+.box3 {
+    background: var(--colorBox3);
+    width: var(--widthGral);
+    height: var(--heightGral);
+    font-size: var(--sizeFontGral);
+    color: var(--colorFont);
+    font-weight: 700;
+}
+
+.box4 {
+    background: var(--colorBox4);
+}
+.box5 {
+    background: var(--colorBox5);
+    
+}
