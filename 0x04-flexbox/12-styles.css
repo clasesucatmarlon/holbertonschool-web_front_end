@@ -1,116 +1,118 @@
-/* SUMMARY
-1. GLOBAL
-2. LAYOUT
-3. SECTION
-4. CARD
-/
-/* 1. GLOBAL */
+/* SUMMARY 
+    1. GLOBAL 
+    2. LAYOUT 
+    3. SECTION 
+    4. CARD 
+*/
 
-/* Reset / Normalize=============================*/
+/*** 1. GLOBAL ***/
+
+/* Reset / Normalize 
+   ============================= */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 html {
     line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
 
 body {
-    margin: 0;
+    margin: 0
 }
 
 main {
-    display: block;
+    display: block
 }
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
+    margin: .67em 0
 }
 
 hr {
     box-sizing: content-box;
     height: 0;
-    overflow: visible;
+    overflow: visible
 }
 
 pre {
     font-family: monospace, monospace;
-    font-size: 1em;
+    font-size: 1em
 }
 
 a {
-    background-color: transparent;
+    background-color: transparent
 }
 
 abbr[title] {
     border-bottom: none;
     text-decoration: underline;
-    text-decoration: underline dotted;
+    text-decoration: underline dotted
 }
 
 b, strong {
-    font-weight: bolder;
+    font-weight: bolder
 }
 
 code, kbd, samp {
     font-family: monospace, monospace;
-    font-size: 1em;
+    font-size: 1em
 }
 
 small {
-    font-size: 80%;
+    font-size: 80%
 }
 
 sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
-    vertical-align: baseline;
+    vertical-align: baseline
 }
 
 sub {
-    bottom: -0.25em;
+    bottom: -.25em
 }
 
 sup {
-    top: -0.5em;
+    top: -.5em
 }
 
 img {
-    border-style: none;
+    border-style: none
 }
 
 button, input, optgroup, select, textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
-    margin: 0;
+    margin: 0
 }
 
 button, input {
-    overflow: visible;
+    overflow: visible
 }
 
 button, select {
-    text-transform: none;
+    text-transform: none
 }
 
-[type="button"], [type="reset"], [type="submit"], button {
-    -webkit-appearance: button;
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button
 }
 
-[type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner, button::-moz-focus-inner {
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
     border-style: none;
-    padding: 0;
+    padding: 0
 }
 
-[type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring, button:-moz-focusring {
-    outline: 1px dotted ButtonText;
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText
 }
 
 fieldset {
-    padding: 0.35em 0.75em 0.625em;
+    padding: .35em .75em .625em
 }
 
 legend {
@@ -119,69 +121,69 @@ legend {
     display: table;
     max-width: 100%;
     padding: 0;
-    white-space: normal;
+    white-space: normal
 }
 
 progress {
-    vertical-align: baseline;
+    vertical-align: baseline
 }
 
 textarea {
-    overflow: auto;
+    overflow: auto
 }
 
-[type="checkbox"], [type="radio"] {
+[type=checkbox], [type=radio] {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0
 }
 
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
-    height: auto;
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
 }
 
-[type="search"] {
+[type=search] {
     -webkit-appearance: textfield;
-    outline-offset: -2px;
+    outline-offset: -2px
 }
 
-[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
 }
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-    font: inherit;
+    font: inherit
 }
 
 details {
-    display: block;
+    display: block
 }
 
 summary {
-    display: list-item;
+    display: list-item
 }
 
 template {
-    display: none;
+    display: none
 }
 
 [hidden] {
-    display: none;
+    display: none
 }
 
-/* Variables
-    =============================*/
+/* Variables 
+   ============================= */
 
 :root {
-    --color-primary: #d73953;
+    --color-primary: #D73953;
     --color-black: #090909;
     --color-white: #ffffff;
     --color-grey: #a0a0a0;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
-    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -192,7 +194,7 @@ template {
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
-    /* SECTION */
+    /** SECTION **/
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-header-align: center;
@@ -209,19 +211,19 @@ template {
     --section-body-padding: 2rem 0 4rem;
     --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
-    /* HEADER */
+    /** HEADER **/
     --header-padding: 4rem 0 0;
-    /* FOOTER */
+    /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
-    /* NAVBAR */
+    /** NAVBAR **/
     --nav-item-font-family: var(--font-family-headings);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 0 2rem;
     --nav-item-link-hover: var(--color-white);
-    /* BUTTON */
+    /** BUTTON **/
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
     --button-border: var(--color-primary) solid 0.2rem;
@@ -231,15 +233,15 @@ template {
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
-    /* MOTION */
-    --transition-duration: 0.3s;
+    /** MOTION **/
+    --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-/* Base
-    =============================*/
+/* Base 
+      ============================= */
 
-:before, :after {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -295,8 +297,8 @@ a:active {
     transition-property: color, background-color;
 }
 
-/* Helpers
-    =============================*/
+/* Helpers 
+      ============================= */
 
 .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
@@ -307,19 +309,12 @@ a:active {
     white-space: nowrap;
 }
 
-/* 2. LAYOUT */
+/* Grid 
+      ============================= */
 
-/* Layout
-    =============================*/
-
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+.row {
+    display: flex;
 }
-
-/* Grid
-    =============================*/
 
 ul.row {
     margin: -1rem;
@@ -327,11 +322,7 @@ ul.row {
     list-style: none;
 }
 
-.row {
-    display: flex;
-}
-
-[class="col-"] {
+[class*='col-'] {
     margin: 1rem;
 }
 
@@ -343,8 +334,12 @@ ul.row {
     width: calc((100% / 2) - 2rem);
 }
 
-/* Navbar
-    =============================*/
+/* Navbar 
+      ============================= */
+
+.navbar-menu {
+    float: right;
+}
 
 .nav {
     margin: 0;
@@ -361,10 +356,6 @@ ul.row {
     letter-spacing: var(--nav-item-letter-spacing);
 }
 
-.nav .nav-item+.nav-item {
-    margin: var(--nav-item-margin);
-}
-
 .nav .nav-link {
     display: block;
     padding: 0.5rem 0;
@@ -377,7 +368,7 @@ ul.row {
 }
 
 .nav .nav-link::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -392,15 +383,12 @@ ul.row {
     width: 100%;
 }
 
-/* Header
-    =============================*/
-
-.header {
-    padding: var(--header-padding);
-    position: relative;
-    z-index: 3;
-    background: transparent;
+.nav .nav-item+.nav-item {
+    margin: var(--nav-item-margin);
 }
+
+/* Header 
+      ============================= */
 
 .header-container {
     display: flex;
@@ -408,8 +396,15 @@ ul.row {
     align-items: center;
 }
 
-/* Footer
-    =============================*/
+.header {
+    padding: var(--header-padding);
+    position: relative;
+    z-index: 3;
+    background: transparent !important;
+}
+
+/* Footer 
+      ============================= */
 
 .footer {
     --nav-item-font-weight: normal;
@@ -439,10 +434,10 @@ ul.row {
     fill: var(--text-color);
 }
 
-/* 3. SECTION */
+/*** 3. SECTION ***/
 
-/* Section (all styles)
-    =============================*/
+/* Section (all styles) 
+      ============================= */
 
 .section {
     padding: var(--section-padding);
@@ -478,8 +473,8 @@ ul.row {
     text-align: var(--section-footer-align);
 }
 
-/* Section theming
-    =============================*/
+/* Section theming 
+      ============================= */
 
 [data-section-theme="dark"] {
     --button-color: var(--color-white);
@@ -488,12 +483,21 @@ ul.row {
     background-color: #010101;
 }
 
-/* Section HERO
-    =============================*/
+/* Section HERO 
+      ============================= */
 
 .section-hero {
     position: relative;
     margin-top: -8.5rem;
+}
+
+.section-hero .section-body {
+    padding: 10rem 4rem;
+}
+
+.section-hero .section-category {
+    color: var(--color-white);
+    text-transform: uppercase;
 }
 
 .hero-homepage {
@@ -515,45 +519,35 @@ ul.row {
     min-height: 50vh;
 }
 
-.section-hero .section-body {
-    padding: 10rem 4rem;
-}
+/* Section Latest news =============================*/
 
-.section-hero .section-category {
-    color: var(--color-white);
-    text-transform: uppercase;
-}
-
-/* Section Latest news
-    =============================*/
-
-.section-latest-news .row {
+.section-blog .row {
     flex-direction: row-reverse;
 }
 
-/* Section SERVICES
-    =============================*/
+/*** 4. CARD ***/
+
+/* Section SERVICES ============================= */
 
 .section-services .row {
     flex-wrap: wrap;
 }
 
-/* Section ABOUT US
-    =============================*/
+/* Section ABOUT US ============================= */
 
-.section-about-us [class="col-"] {
+.section-about-us [class*='col-'] {
     align-self: center;
 }
 
-/* 4. CARD / / Card (all styles)
-    =============================*/
+/* Card (all styles) 
+      ============================= */
 
 .card-category {
     color: var(--color-primary);
 }
 
-/* Card WORK
-    =============================*/
+/* Card WORK 
+      ============================= */
 
 .card-work .card-outer {
     position: relative;
@@ -610,15 +604,15 @@ ul.row {
     left: 0;
     right: 0;
     bottom: 0;
-    content: "";
+    content: '';
 }
 
 .card-work:hover .card-title {
     opacity: 1;
 }
 
-/* Card SERVICES
-    =============================*/
+/* Card SERVICES 
+      ============================= */
 
 .card-services .card-title {
     margin: 0;
@@ -638,8 +632,8 @@ ul.row {
     transition-property: color, background-color;
 }
 
-/* Card TESTIMONIAL
-    =============================*/
+/* Card TESTIMONIAL 
+      ============================= */
 
 .card-testimonial {
     text-align: center;
@@ -662,7 +656,7 @@ ul.row {
 }
 
 .card-testimonial .card-quote::before {
-    content: "\201C";
+    content: '\201C';
     position: absolute;
     top: -4.5rem;
     left: -1rem;
@@ -671,10 +665,10 @@ ul.row {
     z-index: -1;
 }
 
-/* ARTICLE PAGE **/
+/*** ARTICLE PAGE ***/
 
-/* Section HERO (article)
-    =============================*/
+/* Section HERO (article) 
+    ============================= */
 
 .hero-article {
     background-size: 150rem 100rem;
@@ -695,7 +689,7 @@ ul.row {
 .hero-article .section-inner {
     text-align: center;
     align-items: center;
-    min-height: 48vh;
+    min-height: 40vh;
 }
 
 .hero-article .section-body {
@@ -708,8 +702,8 @@ ul.row {
     padding: 5rem 0;
 }
 
-/* Post
-    =============================*/
+/* Post 
+    ============================= */
 
 .post {
     display: flex;
