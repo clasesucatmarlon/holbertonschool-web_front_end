@@ -25,4 +25,6 @@ for (let i = 0; i < 100; i++) {
 	countPrimeNumbers();
 }
 let endTime = window.performance.now();
+
+// Using SetTimeout function
 setTimeout (function() { console.log("Execution time of calculating prime numbers 100 times was " + (endTime - startTime)); }, 0);
